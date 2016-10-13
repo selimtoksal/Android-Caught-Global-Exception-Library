@@ -1,6 +1,6 @@
 # CaughtGlobalExceptionLib
 
-Don't worry anymore. your app is never crash and your users never seen "this app unfortunately has stopped" message.
+Don't worry anymore. your app is never crash and your users never seen "this app unfortunately has stopped" message. And your app never close.
 
         public TransferObject transferObject = new TransferObject();
 
