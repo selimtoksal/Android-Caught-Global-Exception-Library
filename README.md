@@ -21,18 +21,23 @@ dependencies {
 	 compile 'com.github.selimtoksal:CaughtGlobalExceptionLib:v1.0.1'
 	      }
 ```
-And your all acrivities's in onCreate method :
+And your all activities :
 
-        public TransferObject transferObject = new TransferObject();
-
-        transferObject.setCrashText("D'oh! Its Crash..");
-        transferObject.setDestinationActivity(MainActivity.class);
-        transferObject.setDetailsButonText("Details");
-        transferObject.setRestartAppButtonText("Contiune");
-        transferObject.setImagePath(R.drawable.homer);
-        transferObject.setBackgorundHex("#ffffff");
-        transferObject.setCrashTextColor("#000000");
-        Thread.setDefaultUncaughtExceptionHandler(new CosmosException(this,transferObject));
+	public class YourActivity extends AppCompatActivity {
+    		public TransferObject transferObject = new TransferObject();
+    		.....
+		.....
+	@Override
+    	protected void onCreate(Bundle savedInstanceState) {
+        	.....
+        	transferObject.setCrashText("D'oh! Its Crash.."); //your error message "oops its crash" or something.
+        	transferObject.setDestinationActivity(YourStartupActivity.class); //MUST BE UR STARTING ACTIVITY
+        	transferObject.setDetailsButonText("Details"); //showing stacktrace. change your button's text what you want
+        	transferObject.setRestartAppButtonText("Contiune"); //restart your app. change your button's text what you want
+        	transferObject.setImagePath(R.drawable.homer); ur error image change what you want. MUST BE "R.drawable.example"
+        	transferObject.setBackgorundHex("#ffffff"); //ur crash activity's backgorund color.change what you want.
+        	transferObject.setCrashTextColor("#000000"); //CrashText's color. MUST BE HEX CODE
+        	Thread.setDefaultUncaughtExceptionHandler(new CosmosException(this,transferObject)); //this our girl
         
 And thats it! Easy.
 
