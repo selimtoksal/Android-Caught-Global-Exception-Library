@@ -1,6 +1,6 @@
 # Android Caught Global Exception Library
 
-Your app is never crash and your users never see "this app unfortunately has stopped" message. And your app never close.
+Your app is never crash and your users never see "this app unfortunately has stopped" message. And your app never force to close.
 
 ### Use
 Add your build.grandle (PROJECT: xxx) :
