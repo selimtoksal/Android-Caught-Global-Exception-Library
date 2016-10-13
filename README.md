@@ -14,6 +14,7 @@ Don't worry anymore. your app is never crash and your users never seen "this app
         Thread.setDefaultUncaughtExceptionHandler(new CosmosException(this,transferObject));
         
 And thats it! Easy.
+
 ![alt tag](http://i.hizliresim.com/QQ3vrZ.jpg)
 ![alt tag](http://i.hizliresim.com/G3AP8Z.jpg)
 
