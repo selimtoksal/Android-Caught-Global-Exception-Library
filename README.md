@@ -2,6 +2,27 @@
 
 Don't worry anymore. your app is never crash and your users never seen "this app unfortunately has stopped" message. And your app never close.
 
+### Use
+Add your build.grandle (PROJECT: xxx) :
+```
+allprojects {
+	repositories {
+	        ...
+		maven { url "https://jitpack.io" }
+		     }
+}
+```
+ 
+ 
+Add your build.grandle(app or where you want use it) :
+```
+dependencies {
+         ....
+	 compile 'com.github.selimtoksal:CaughtGlobalExceptionLib:v1.0.1'
+	      }
+```
+And your all acrivities's in onCreate method :
+
         public TransferObject transferObject = new TransferObject();
 
         transferObject.setCrashText("D'oh! Its Crash..");
