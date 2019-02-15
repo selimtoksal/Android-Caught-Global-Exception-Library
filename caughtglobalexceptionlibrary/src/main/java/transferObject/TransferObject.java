@@ -49,48 +49,55 @@ public class TransferObject implements Serializable  {
     public java.lang.Class getDestinationActivity(){
         return DestinationActivity;
     }
-    public void setDestinationActivity(java.lang.Class destinationActivity){
+    public TransferObject setDestinationActivity(java.lang.Class destinationActivity){
         DestinationActivity = destinationActivity;
+        return this;
     }
 
     public String getCrashTextColor(){
         return CrashTextColor;
     }
-    public void setCrashTextColor(String crashTextColor){
+    public TransferObject setCrashTextColor(String crashTextColor){
         CrashTextColor = crashTextColor;
+        return this;
     }
 
     public String getCrashText(){
         return CrashText;
     }
-    public void setCrashText(String crashText){
+    public TransferObject setCrashText(String crashText){
         CrashText = crashText;
+        return this;
     }
 
     public String getDetailsButonText(){
         return DetailsButonText;
     }
-    public void setDetailsButonText(String detailsButonText){
+    public TransferObject setDetailsButonText(String detailsButonText){
         DetailsButonText = detailsButonText;
+        return this;
     }
 
     public String getRestartAppButtonText(){
         return RestartAppButtonText;
     }
-    public void setRestartAppButtonText(String restartAppButtonText){
+    public TransferObject setRestartAppButtonText(String restartAppButtonText){
         RestartAppButtonText = restartAppButtonText;
+        return this;
     }
 
     public Integer getImagePath(){
         return ImagePath;
     }
-    public void setImagePath(Integer imagePath){
+    public TransferObject setImagePath(Integer imagePath){
         ImagePath = imagePath;
+        return this;
     }
     public String getBackgorundHex(){
         return BackgorundHex;
     }
-    public void setBackgorundHex(String backgorundHex){
+    public TransferObject setBackgorundHex(String backgorundHex){
         BackgorundHex = backgorundHex;
+        return this;
     }
 }
